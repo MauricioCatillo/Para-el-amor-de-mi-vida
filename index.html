@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Creativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-box" id="text-box">
+            <p>La distancia y el tiempo entre nosotros nunca cambiaría mi mente porque amor ... moriría por ti amor, moriría por ti ... </p>
+        </div>
+        <div class="buttons" id="main-buttons">
+            <button onclick="playAudioAndChangeText('Grita mi nombre cuando te bese gentilmente ... ', 'audio1')">Botón 1</button>
+            <button onclick="playAudioAndChangeText('Seamos una pareja invidiale mi amor!!!, TE AMO AMOR DE MI VIDA!!', 'audio2')">Botón 2</button>
+        </div>
+        <div class="buttons" id="back-button" style="display: none;">
+            <button onclick="resetPage()">Regresar</button>
+        </div>
+    </div>
+    <audio id="audio1" src="audio1.mp3"></audio>
+    <audio id="audio2" src="audio2.mp3"></audio>
+    <audio id="background-music" src="background_music.mp3" loop autoplay></audio>
+    <script src="script.js"></script>
+</body>
+</html>
